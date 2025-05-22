@@ -144,6 +144,9 @@ section#about {
   padding: 10px 15px;
   background-color: #7dc738;
   margin-top: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+
 }
 
 #about-right-section {
@@ -186,6 +189,9 @@ section#about {
 
 h2.section-heading {
   font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 10px 1.2rem;
 }
 /* Experience */
 #experience {
@@ -303,7 +309,7 @@ h2.section-heading {
 
 /* Skills */
 #skills {
-  margin-top: 120px;
+  margin: 120px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,14 +322,33 @@ h2.section-heading {
   text-align: center;
 }
 
+#skills #skills-heading-section{
+  height: 20%;
+}
+#skills #skills-showcase-section{
+  height: 500px;
+  width: 700px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  justify-content: space-around;
+  background-color: #ffc145;
+}
+
 #hard-skills .skill-card-container,
-#soft-skills .skill-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
+#soft-skills .skill-card-container 
+{
+  width: 700px;
+} 
+
+/* Designing Card Container */
+#hard-skills .skill-card-container{
+  display: flex;
+  justify-content: space-around;
 }
 
 #hard-skills .skill-card-container .card {
+  /* card contents */
   background-color: #ffffff;
   height: 150px;
   width: 150px;
@@ -375,32 +400,128 @@ h2.section-heading {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  width: 100vw;
 }
 
 .project-card-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   column-gap: 10px;
 }
 
 .project-card-container .projects-card {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 10px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px; 
+}
+
+.projects-card .project-name{
+  text-align: center;
+  margin-top: 9px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.projects-card img{
+  background-image: url("./Assets/laptop-4065617.jpg");
+  height: 120px;
+  width: 230px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.projects-card p{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  max-width: 240px;
+  text-align: center;
+}
+
+.projects-card .project-btns{
+  width: 100%;
+   display: flex;
+  justify-content: space-evenly; 
+}
+
+.projects-card .project-btns button{
+  padding: 6px 10px;
+}
+
+button.project-src{
+  background-color: #ffc145;
+  border-radius: 20px 80px;
+  border: 1px solid black;
+  color: #000;
+}
+
+button.project-site{
+   background-color: #7dc738;
+  border-radius: 80px 20px;
   border: 1px solid black;
 }
 
-footer {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
+.project-btns a{
+  text-decoration: none;
+  color: #000;
 }
 
-footer form {
-  display: flex;
-  flex-direction: column;
+footer{
+  background-color: #000;
+  color: #fff;
+  height: 60vh;
+  width: 100vw;
 }
+
+footer label{
+  display: block;
+}
+
+#footer-top-section{
+  height: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#footer-top-section #contact-form form{
+  padding: 10px;
+  height: 260px;
+  width: 300px;
+}
+
+#contact-form form textarea{
+  resize: none;
+  overflow-y: auto;
+  width: 100%;
+  text-indent: 43px;
+}
+
+#contact-form form input[type=submit]{
+  display: block;
+
+}
+
+#contact-form form input{
+  width: 100%;
+}
+
+#footer-bottom-section{
+  height: 15%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d71fc;
+}
+
 
 /* Responsive Design  for Experience section*/
 @media screen and (max-width: 1150px) {
