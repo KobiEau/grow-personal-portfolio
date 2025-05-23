@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description" content="Personal Portfolio" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -23,14 +29,15 @@
       <!-- Navbar -->
       <nav>
         <!-- Insert Icon -->
-        <div>NE</div>
+        <div id="Logo" >NE</div>
 
         <div class="list-items">
-          <div><a href="#">About</a></div>
-          <div><a href="#">Experience</a></div>
-          <div><a href="#">Skills</a></div>
-          <div><a href="#">Projects</a></div>
-          <div><a href="#">Contact</a></div>
+          <div><a href="#hero">Home</a></div>
+          <div><a href="#about">About</a></div>
+          <div><a href="#experience">Experience</a></div>
+          <div><a href="#skills">Skills</a></div>
+          <div><a href="#Projects">Projects</a></div>
+          <div><a href="#footer-top-section">Contact</a></div>
         </div>
       </nav>
     </header>
@@ -128,8 +135,8 @@
         </div>
         <!-- Sliding sections -->
         <div id="skills-showcase-section">
-          <div id="hard-skills">
-            <h3>Technical Skills</h3>
+          <div class="hard-skills">
+            <br><h3 class="sub-section-heading">Technical Skills</h3><br>
             <div class="skill-card-container">
               <div class="card">
                 <!-- icon -->
@@ -161,12 +168,44 @@
                 />
               </div>
             </div>
+            <div class="skill-card-container">
+              <div class="card">
+                <!-- icon -->
+                <h4>Git</h4>
+                <img
+                  src="./Assets/Icons/Git-icon.png"
+                  alt="HTML icon"
+                  class="skill-icon"
+                />
+                <!-- <i class="fa-brands fa-html5" id="html-icon"></i> -->
+                <!-- <object data="./Assets/Icons/html-124-svgrepo(black).svg" type="image/svg+xml" id="html-icon"></object> -->
+              </div>
+              <div class="card">
+                <!-- icon -->
+                <h4>GitHub</h4>
+                <img
+                  src="./Assets/Icons/icons8-github-2.png"
+                  alt="CSS icon"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="card">
+                <!-- icon -->
+                <h4>VSCode</h4>
+                <img
+                  src="./Assets/Icons/icons8-visual-studio-code-480.png"
+                  alt=""
+                  class="skill-icon"
+                />
+              </div>
+            </div>
           </div>
           <div id="soft-skills">
-            <h3>Non-Technical Skills</h3>
+            <br><h3 class="sub-section-heading">Non-Technical Skills</h3><br>
             <div class="skill-card-container soft-skills">
               <div class="card">
                 <!-- icon -->
+                 <img src="./Assets/Icons/Soft-skills icon/icons8-problem-solving-skills-50.png" alt="" class="soft-skill-icon" style="height: 50px;width: 50px;">
                 <h4>Problem solving</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -175,6 +214,7 @@
               </div>
               <div class="card">
                 <!-- icon -->
+                 <img src="./Assets/Icons/Soft-skills icon/collaboration-icon.png" alt="">
                 <h4>Collaboration</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -183,6 +223,7 @@
               </div>
               <div class="card">
                 <!-- icon -->
+                 <img src="./Assets/Icons/Soft-skills icon/adaptability-icon.png" alt="">
                 <h4>Adaptability</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -191,6 +232,7 @@
               </div>
               <div class="card">
                 <!-- icon -->
+                 <img src="./Assets/Icons/Soft-skills icon/creativity-icon.png" alt="">
                 <h4>Creativity</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -199,7 +241,8 @@
               </div>
               <div class="card">
                 <!-- icon -->
-                <h4>Enthusiasm</h4>
+                 <img src="./Assets/Icons/Soft-skills icon/detail-oriented-icon.png" alt="">
+                <h4>Detail-oriented</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Porro, voluptatum?
@@ -207,6 +250,7 @@
               </div>
               <div class="card">
                 <!-- icon -->
+                 <img src="./Assets/Icons/Soft-skills icon/icons8-prioritization-64-icons.png" alt="">
                 <h4>Prioritisation</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -216,26 +260,26 @@
             </div>
           </div>
 
-          <div id="additional-skills">
+          <!-- <div id="additional-skills">
             <div class="skill-card-container">
-              <div class="card">
+              <div class="card"> -->
                 <!-- icon -->
-                <h4>Linux</h4>
+                <!-- <h4>Linux</h4>
                 <p>Task I used it for</p>
               </div>
-              <div class="card">
+              <div class="card"> -->
                 <!-- icon -->
-                <h4>Tech Support</h4>
+                <!-- <h4>Tech Support</h4>
                 <p>Task I used it for</p>
               </div>
-              <div class="card">
+              <div class="card"> -->
                 <!-- icon -->
-                <h4>Skill Name</h4>
+                <!-- <h4>Skill Name</h4>
                 <p>Task I used it for</p>
               </div>
             </div>
-          </div>
-        </div>
+          </div>  
+        </div> --->
       </section>
 
       <section id="Projects">
