@@ -52,6 +52,11 @@ div#Logo{
   padding: 5px;
 }
 
+div#Logo a{
+  text-decoration: none;
+  color: black;
+}
+
 nav div.list-items {
   display: flex;
   flex-direction: row;
