@@ -386,6 +386,10 @@ h2.section-heading {
   background-color: #e9e8e6;
 }
 
+#skills #skills-showcase-section:hover{
+  background-color: #bbd6a2;
+}
+
 #skills-showcase-section h3{
   margin:0px 12px 0px 12px;
 }
@@ -500,12 +504,13 @@ h2.section-heading {
 }
 
 .projects-card img{
-  background-image: url("./Assets/Landscapers-INC-screenshot.png");
+  /* background-image: url("./Assets/Landscapers-INC-screenshot.png"); */
   height: 180px;
   width: 270px;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  object-fit: contain;
 }
 
 .projects-card p{
