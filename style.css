@@ -644,16 +644,19 @@ form input[type=button]:hover{
   padding: 1px;
 }
 
-
-
-
 #footer-bottom-section{
   height: 100%;
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #7dc738;
+}
+
+.footer-social-links a{
+  color: #fff;
+  text-decoration: none;
 }
 
 
