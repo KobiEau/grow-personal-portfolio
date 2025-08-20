@@ -627,7 +627,7 @@ footer label{
   border-radius: 5px;
 }
 
-form input[type=button]{
+form input[type=submit]{
   padding: 3px 0;
   border-radius: 20px 80px;
   background-color: #ffc145;
@@ -637,7 +637,7 @@ form input[type=button]{
   margin-left: 20%;
 }
 
-form input[type=button]:hover{
+form input[type=submit]:hover{
   box-shadow: 2px 5px 15px 2px #ffc145;
 }
 
