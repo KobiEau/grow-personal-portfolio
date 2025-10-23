@@ -406,9 +406,14 @@ h2.section-heading {
 
 #hard-skills, #soft-skills{
   width: 50%;
+  height: fit-content;
   /* outline: 1px dotted darkgoldenrod; */
 }
 
+/* #hard-skills:hover{
+  background-color: #c7e1b198;
+  transition: 2.3s ease-in-out;
+} */
 
 /* Designing Card Container */
 #hard-skills .skill-card-container{
